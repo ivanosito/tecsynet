@@ -131,29 +131,27 @@
   </div>
 </section>
 
-<section id="contacto" class="section alt">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p>Cuéntanos sobre tu proyecto y te responderemos muy pronto.</p>
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias! Tu mensaje fue simulado en esta demo.');">
-      <div class="grid form-grid">
-        <label>
-          <span>Nombre</span>
-          <input type="text" required placeholder="Tu nombre" />
-        </label>
-        <label>
-          <span>Correo</span>
-          <input type="email" required placeholder="tu@empresa.com" />
-        </label>
-        <label class="full">
-          <span>Mensaje</span>
-          <textarea rows="5" required placeholder="Describe brevemente tu necesidad"></textarea>
-        </label>
-      </div>
-      <button class="btn" type="submit">Enviar</button>
-    </form>
+<section id="contacto" class="section"><h2>Contacto</h2>
+<form class="contact-form" action="https://formspree.io/f/xqadjgwo" method="POST">
+  <input type="hidden" name="_subject" value="Nuevo contacto desde TecsyNet">
+  <input type="hidden" name="_language" value="es">
+  <input type="hidden" name="_redirect" value="gracias.html">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div class="grid form-grid">
+    <label for="name"><span>Nombre</span>
+      <input id="name" name="name" type="text" required placeholder="Tu nombre">
+    </label>
+    <label for="email"><span>Correo</span>
+      <input id="email" name="email" type="email" required placeholder="tu@empresa.com">
+    </label>
+    <label class="full" for="message"><span>Mensaje</span>
+      <textarea id="message" name="message" rows="5" required placeholder="Describe brevemente tu necesidad"></textarea>
+    </label>
   </div>
+  <button class="btn" type="submit">Enviar</button>
+</form>
 </section>
+
 
 <footer class="site-footer">
   <div class="container footer-inner">
