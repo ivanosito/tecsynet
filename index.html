@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TecsyNet — Technology Systems for Internet</title>
+  <meta name="description" content="TecsyNet: sitios web, aplicaciones web, VoIP con Asterisk e IoT con Arduino. Making I.T. happens." />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="assets/logo.png" alt="TecsyNet logo" />
+      <div class="brand-text">
+        <span class="title">TecsyNet</span>
+        <span class="tagline">Technology Systems for Internet</span>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    <nav class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto" class="btn">Contáctanos</a>
+    </nav>
+  </div>
+</header>
+
+<section id="inicio" class="hero" role="banner" aria-label="Hero TecsyNet">
+  <div class="hero-media" style="background-image:url('assets/header2.png')"></div>
+  <div class="container hero-inner">
+    <h1>Making I.T. happens</h1>
+    <p>Desarrollamos <strong>sitios y aplicaciones web</strong>, <strong>soluciones VoIP con Asterisk</strong> y <strong>appliances IoT</strong> basadas en Arduino para impulsar tu negocio.</p>
+    <div class="cta">
+      <a href="#contacto" class="btn">Solicitar cotización</a>
+      <a href="#servicios" class="btn ghost">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="section">
+  <div class="container">
+    <h2>Nuestros servicios</h2>
+    <div class="grid cards">
+      <article class="card">
+        <h3>Desarrollo Web</h3>
+        <p>Diseñamos y construimos sitios y aplicaciones web modernos, rápidos y seguros, listos para SEO y dispositivos móviles.</p>
+        <ul>
+          <li>Landing pages y sitios corporativos</li>
+          <li>SPAs y dashboards</li>
+          <li>Integraciones con APIs</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>VoIP con Asterisk</h3>
+        <p>Implementamos PBX IP, Call Centers y IVR con enrutamiento inteligente, grabación y reportes.</p>
+        <ul>
+          <li>Instalación y configuración</li>
+          <li>Integración CRM/ERP</li>
+          <li>Optimización y seguridad</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>IoT &amp; Arduino</h3>
+        <p>Desarrollamos appliances y prototipos a medida para automatización y telemetría industrial o comercial.</p>
+        <ul>
+          <li>Diseño de hardware y firmware</li>
+          <li>Gateways y sensores</li>
+          <li>Paneles web de control</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="section alt">
+  <div class="container">
+    <h2>Sobre TecsyNet</h2>
+    <p>Fundada en 2011, TecsyNet combina experiencia en desarrollo web, comunicaciones y electrónica para entregar soluciones integrales.</p>
+    <div class="grid founders">
+      <div class="founder">
+        <h3>Ing. Iván Valdivieso</h3>
+        <p><strong>CEO &amp; Co‑fundador</strong></p>
+      </div>
+      <div class="founder">
+        <h3>Ing. Adrián Correa</h3>
+        <p><strong>CTO &amp; Co‑fundador</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portafolio" class="section">
+  <div class="container">
+    <h2>Portafolio</h2>
+    <p class="muted">Algunos proyectos destacados (coloca aquí capturas o enlaces cuando estén disponibles).</p>
+    <div class="grid gallery">
+      <a class="shot" href="#">
+        <div class="ph">Proyecto Web</div>
+      </a>
+      <a class="shot" href="#">
+        <div class="ph">PBX / Call Center</div>
+      </a>
+      <a class="shot" href="#">
+        <div class="ph">IoT / Arduino</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section alt">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Cuéntanos sobre tu proyecto y te responderemos muy pronto.</p>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias! Tu mensaje fue simulado en esta demo.');">
+      <div class="grid form-grid">
+        <label>
+          <span>Nombre</span>
+          <input type="text" required placeholder="Tu nombre" />
+        </label>
+        <label>
+          <span>Correo</span>
+          <input type="email" required placeholder="tu@empresa.com" />
+        </label>
+        <label class="full">
+          <span>Mensaje</span>
+          <textarea rows="5" required placeholder="Describe brevemente tu necesidad"></textarea>
+        </label>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand small">
+      <img src="assets/logo.png" alt="TecsyNet logo" />
+      <div class="brand-text">
+        <span class="title">TecsyNet</span>
+        <span class="tagline">Making I.T. happens</span>
+      </div>
+    </div>
+    <nav class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#" aria-disabled="true">Política de privacidad</a>
+    </nav>
+  </div>
+  <div class="copy">© 2011–2025 TecsyNet. Todos los derechos reservados.</div>
+</footer>
+
+<script>
+// Cerrar menú al hacer click en un enlace (móvil)
+document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('nav-open')));
+</script>
+</body>
+</html>
