@@ -36,7 +36,7 @@ html,body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,Segoe U
 
 .menu-toggle{display:none;background:transparent;border:none;font-size:24px}
 
-.hero{position:relative;min-height:54vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg, #eaf2ff 0%, #ffffff 100%)}
+.hero{position:relative;min-height:40.5vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg, #eaf2ff 0%, #ffffff 100%)}
 .hero-media{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.25}
 .hero-inner{position:relative;padding:64px 0}
 .hero h1{font-size:44px;margin:0 0 8px}
