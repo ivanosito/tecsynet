@@ -37,7 +37,7 @@ html,body{margin:0;padding:0 1rem;font-family:'Inter',system-ui,-apple-system,Se
 
 .hero{position:relative;min-height:40.5vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg, #eaf2ff 0%, #ffffff 100%)}
 .hero-media{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.25}
-.hero-inner{position:relative;padding:64px 0}
+.hero-inner{position:relative;padding:64px 16px}
 .hero h1{font-size:44px;margin:0 0 8px}
 .hero p{max-width:760px;margin:0 0 16px;color:#394257}
 .cta{display:flex;gap:12px;margin-top:12px}
@@ -84,4 +84,5 @@ input,textarea{border:1px solid #cbd5e1;border-radius:10px;padding:12px;font:inh
   body.nav-open .menu{position:absolute;top:58px;right:16px;background:#fff;border:1px solid #e6ecff;border-radius:12px;display:flex;flex-direction:column;padding:10px;gap:8px;box-shadow:0 10px 30px rgba(20,40,80,.15)}
   .cards,.gallery,.founders,.form-grid{grid-template-columns:1fr}
   .hero h1{font-size:34px}
+  .hero-inner{padding:64px 10px}
 }
